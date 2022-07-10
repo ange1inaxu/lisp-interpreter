@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-"""6.009 Lab 8: Snek Interpreter"""
+"""Lisp Interpreter"""
 
 import doctest
-
-# NO ADDITIONAL IMPORTS!
 
 
 ###########################
@@ -517,30 +515,4 @@ def repl():
 
 
 if __name__ == "__main__":
-    # code in this block will only be executed if lab.py is the main file being
-    # run (not when this module is imported)
-    
-    # uncommenting the following line will run doctests from above
-    #doctest.testmod()
     repl()
-    
-    # # Test environment variable binding
-    # E1 = Environment()
-    # E1.variables = {'x':3, 'y':4, 'z':5}
-    # E2 = Environment(E1)
-    # E2.variables = {'x':2, 'y':3}
-    # E3 = Environment(E1)
-    # E3.variables = {'x':7}
-    # E4 = Environment(E3)
-    # E4.variables = {'a':1}
-    # print("E1 x=", E1.get_var('x'))
-    # print("E2 x=", E2.get_var('x'))
-    # print("E3 x=", E3.get_var('x'))
-    # print("E4 x=", E4.get_var('x'))
-    # print("E1 y=", E1.get_var('y'))
-    # print("E2 y=", E2.get_var('y'))
-    # print("E3 y=", E3.get_var('y'))
-    
-    # evaluate(parse(tokenize('(define y 8)')), E4)
-    # print("E4 y=", E4.get_var('y'))
-    
